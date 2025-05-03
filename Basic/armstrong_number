@@ -1,0 +1,30 @@
+n=153 
+s=n #assigning input value to s variable
+b=len(str(n))
+
+sum1=0
+
+while n != 0:
+    r = n % 10
+    sum1 = sum1 + (r**b)
+    n = n // 10
+
+if s==sum1:
+    print(s, "is armstrong number")
+else:
+    print(s, "is not armstrong number")
+# n= 153
+# s=n
+# b=len(str(n))
+
+# sum1=0
+
+# while n !=0:
+#     r=n%10
+#     sum1=sum1+(r**b)
+#     n=n//10
+
+# if s==sum1:
+#     print("armstrong ")
+# else:
+#     print("NO ARMSTRONG")
