@@ -1,0 +1,24 @@
+import re
+
+#function
+def check_string(s):
+    # print("function to check if the string is alphanumeric or not")
+    regex = re.compile('[@_!#$%^&*()<>?/}{~:]')
+    # print("if the string contains any special character")
+
+    if (regex.search(s)== None):
+        return True, "String is alphanumeric"
+    return False, "String is not alphanumeric"
+
+def main():
+    # print("function to check if the string is alphanumeric or not")
+    #using regex
+    s="GeeksforGeeks"
+
+    # print("calling the function")
+    ans=check_string(s)
+    print("The string is alphanumeric:", ans)
+
+#driver code
+if __name__ == "__main__":
+    main()
