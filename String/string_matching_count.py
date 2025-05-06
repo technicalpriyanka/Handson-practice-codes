@@ -14,7 +14,7 @@ def count_matching_characters(s1, s2):
                 count+=1
                 break
     return count
-
+3
 
 s1 = "VISHAKSHI"
 s2 = "VANSHIKA"
